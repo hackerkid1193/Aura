@@ -13,6 +13,9 @@ Choose your environment and run the corresponding entry script:
 ### Windows (PowerShell)
 `.\Aura-PS\Core.ps1 -Action sort`
 
+### Windows (Intune, WDAC, Other Restriction)
+'& ([scriptblock]::Create((Get-Content .\Aura-PS.ps1 -Raw))) -Action sort'
+
 ### Linux/Cloud (Python)
 `python Aura-Py/main.py --task timer`
 
