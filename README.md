@@ -19,7 +19,21 @@ Choose your environment and run the corresponding entry script:
 ### macOS (Zsh)
 `./Aura-Mac/aura.sh --cleanup`
 
+## 🛡️ Integrity & Licensing
+To ensure the suite is running correctly and has not been covertly edited or tampered with, you must use the **Aura Guard** handler.
+
+## 🚩 Anti-Tamper Protocol (ATP)
+The Guard scripts are equipped with **ATP**. If a signature mismatch is detected:
+* **Windows:** Triggers a terminal lockdown and session termination.
+* **Python:** Initiates a memory dump simulation and process kill.
+* **macOS:** Revokes script execution privileges and triggers an audible alert.
+
+**To safely update Aura:**
+1. Make your changes.
+2. Run the platform Guard with the `seal` argument to update the digital signature.
+
 ## 🛠️ Unified Features
 - **File Warden:** Consistent file organization logic across all OS types.
 - **Neuro-Focus:** Synced Pomodoro and task-tracking logic.
 - **Brain Dump:** Universal timestamped logging.
+
